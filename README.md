@@ -1,3 +1,4 @@
+```markdown
 # HORECA Zomato Market Intelligence – EDA
 
 ## Academic Details
@@ -41,3 +42,22 @@ HORECA_Zomato_Market_Intelligence_TMP/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
+```
+
+## How to Run
+
+1. Open a terminal in the project folder.
+2. Install packages: `pip install -r requirements.txt`
+3. Start Jupyter: `jupyter notebook`
+4. Open `notebooks/HORECA_Zomato_EDA.ipynb` and run all cells.
+
+## Limitations
+
+The dataset has ratings, votes, and listed prices—not actual sales, rent, commissions, costs, margins, or dates (so time trends aren't possible). Treat these insights as leads to validate in the real market, not guaranteed profit.
+
+```
+
+<FollowUp label="Want me to paste this directly into your README editor on GitHub?" query="Paste this simplified README directly into the README.md editor on GitHub."/>
+
+```
