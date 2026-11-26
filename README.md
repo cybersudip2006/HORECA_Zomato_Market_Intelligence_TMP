@@ -13,10 +13,11 @@ Exploratory Data Analysis (EDA) on the Zomato restaurant and menu dataset to hel
 - **City and area** selection
 - **Dining vs. delivery** strategy
 
-## Dataset Summary
-- **123,657** menu items across **26** columns and **914** unique outlets (by restaurant name, city, and area).
-- **48** cuisines and **17** cities (**13** cities with 20+ outlets are used for city comparisons).
-- Outlet metrics (ratings and votes) are deduplicated per outlet; prices are analyzed at the menu-item level. No missing cells were found, though `Is_Bestseller` is always `1` (use `Best_Seller` text tags instead) and menu prices are right-skewed (median **₹208.57**, IQR upper fence **₹552.50**, ~4.4% above).
+## Dataset and analytical unit
+- 123,657 menu-item rows, 26 columns.
+- 914 unique restaurant outlets using restaurant name + city + place as the outlet key.
+- 48 cuisine labels and 17 city labels; 13 city labels have at least 20 unique restaurants and are used for macro-city comparisons.
+- Menu prices are analysed at item level. Restaurant ratings, total votes and channel metrics are aggregated once per outlet to avoid counting a restaurant repeatedly for every menu item. Cuisine comparisons use outlet-cuisine pairs.
 
 ## Key Findings & Recommendations
 - **Cuisine:** **Desserts** are a balanced mainstream option (~90 outlets, ~3.93 avg rating, 185 median votes, ₹220 median price). **Kebab** is a smaller niche option (12 outlets, ~3.90 avg rating, 422.5 median votes, ₹240 median price) worth testing on a small scale.
@@ -44,17 +45,13 @@ HORECA_Zomato_Market_Intelligence_TMP/
 
 ## How to Run
 
-1. Open a terminal in the project folder.
-2. Install packages: `pip install -r requirements.txt`
-3. Start Jupyter: `jupyter notebook`
-4. Open `notebooks/HORECA_Zomato_EDA.ipynb` and run all cells.
+1. Install Python 3.10+ (or a current compatible Python version).
+2. Open a terminal in the repository root.
+3. Install dependencies: `pip install -r requirements.txt`.
+4. Launch Jupyter: `jupyter notebook`.
+5. Open `notebooks/HORECA_Zomato_EDA.ipynb` and run all cells from top to bottom.
 
 ## Limitations
 
 The dataset has ratings, votes, and listed prices—not actual sales, rent, commissions, costs, margins, or dates (so time trends aren't possible). Treat these insights as leads to validate in the real market, not guaranteed profit.
 
-```
-
-<FollowUp label="Want me to paste this directly into your README editor on GitHub?" query="Paste this simplified README directly into the README.md editor on GitHub."/>
-
-```
