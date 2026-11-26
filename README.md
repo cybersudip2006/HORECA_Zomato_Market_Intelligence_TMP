@@ -58,6 +58,3 @@ Use Desserts as the mainstream category to test, with a delivery-friendly menu a
 
 ## Important limitations
 This dataset contains ratings, votes and listed menu prices, not actual order revenue, operating cost, rent, platform commission, gross margin or customer acquisition cost. Votes are not equivalent to sales. It has no timestamp, so trend/seasonality analysis is not possible. The analysis therefore identifies **market opportunities to validate**, not proven profitability.
-
-## Submission note
-The college instruction requires the repository name format `HORECA_ProjectName_TMP`. Suggested name: `HORECA_Zomato_Market_Intelligence_TMP`. Include the original dataset and data description file so the analysis can be reproduced.
