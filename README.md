@@ -1,4 +1,10 @@
 # HORECA Zomato Market Intelligence – Exploratory Data Analysis
+## Academic Details
+- **College:** Govt. College of Engineering & Ceramic Technology
+- **Department:** Informtion Technology
+- **Submitted by:** Sudip Chakraborty
+- **Guide:** Arijit Midya
+- **Academic Year:** 2026-27
 
 ## Project overview
 This project analyses the supplied Zomato menu/restaurant dataset to support three HORECA launch decisions: **cuisine category**, **city/neighbourhood**, and **dining vs delivery channel**. The workflow is descriptive and diagnostic EDA, not a predictive machine-learning model.
